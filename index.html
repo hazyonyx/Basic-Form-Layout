@@ -16,5 +16,93 @@
 </head>
 <body>
     
+    <form action="data.json" method="POST">
+        <fieldset>
+            <legend>User Information</legend>
+            <p>
+                <ul>
+                    <li>
+                        <label for="name">User Name</label>
+                        <input type="text" id="name" name="user.name">
+                    </li>
+                    <li>
+                        <label for="PW">Password</label>
+                        <input type="password" id="PW" name="user.PW">
+                    </li>
+                </ul>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>What drink do you want?</legend>
+            <p>
+                <label for="drink">
+                    <ul>
+                        <li>
+                            <input type="radio" id="drink" name="user.drink">
+                            Coke
+                        </li>
+                        <li>
+                            <input type="radio" id="drink" name="user.drink">
+                            Diet Coke
+                        </li>
+                        <li>
+                            <input type="radio" id="drink" name="user.drink">
+                            Sprite
+                        </li>
+                        <li>
+                            <input type="radio" id="drink" name="user.drink">
+                            Water
+                        </li>
+                    </ul>
+                </label>
+            </p>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Pizza Preference</legend>
+            <p>
+                <ul>
+                    <li>
+                        <label for="pizza_1">
+                            <input type="checkbox" name="pizza_1" id="pizza_1">
+                            Plain
+                        </label>
+                    </li>
+                    <li>
+                        <label for="pizza_2">
+                            <input type="checkbox" name="pizza_2" id="pizza_2">
+                            Pepperone
+                        </label>
+                    </li>
+                    <li>
+                        <label for="pizza_3">
+                            <input type="checkbox" name="pizza_3" id="pizza_3">
+                            Chicken
+                        </label>
+                    </li>
+                    <li>
+                        <label for="pizza_4">
+                            <input type="checkbox" name="pizza_4" id="pizza_4">
+                            Sausage
+                        </label>
+                    </li>
+                </ul>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Special Instructions</legend>
+            <p>
+                <ul>
+                    <li>
+                        <label for="specInst">Special Instructions:</label><br>
+                        <textarea name="user.specInst" id="specInst" cols="30" row="10"></textarea>
+                    </li>
+                </ul>
+                <button type="submit">Submit</button>
+            </p>
+        </fieldset>
+    </form>
 </body>
 </html>
